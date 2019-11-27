@@ -69,7 +69,7 @@ export default class Slider extends Component<SliderProps, SliderState> {
                   pos: pos > 0 ? pos - 1 : items.length - 1,
                   transitioningRight: false
                 });
-              }, 500);
+              }, 700);
             }}
           >
             {items.length > size ? (
@@ -87,7 +87,7 @@ export default class Slider extends Component<SliderProps, SliderState> {
                   pos: pos < items.length - 1 ? pos + 1 : 0,
                   transitioningLeft: false
                 });
-              }, 500);
+              }, 700);
             }}
           >
             {items.length > size ? (
@@ -101,7 +101,7 @@ export default class Slider extends Component<SliderProps, SliderState> {
               return (
                 <div
                   className={`col-1-of-${size} ${
-                    i === showItems.length - 2 ? "col-without-margin" : ""
+                    i === showItems.length - 2 ? "" : ""
                   }`}
                   key={`item-${i}`}
                 >

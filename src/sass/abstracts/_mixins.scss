@@ -17,7 +17,7 @@
   @for $size from 1 through $cols {
     @for $length from $size through $cols {
       .col-#{$size}-of-#{$length} {
-        width: calc-col-width($size, $length);
+        width: calc-col-width-slider($size, $length);
       }
     }
   }
